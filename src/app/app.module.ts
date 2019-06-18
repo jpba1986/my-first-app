@@ -10,6 +10,7 @@ import { SuccessAlertComponent } from './successAlert/successAlert.component';
 import { ALERTComponent } from './alert/alert.component';
 import { FreddieComponent } from './freddie/freddie.component';
 import { PagesComponent } from './pages.component';
+import { ServerComponent } from './server/server.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +19,11 @@ import { PagesComponent } from './pages.component';
     SuccessAlertComponent,
     ALERTComponent,
     FreddieComponent,
-    PagesComponent
+    PagesComponent,
+    ServerComponent
   ],
   imports: [
-    BrowserModule//,
-    //FormsModule,
-   // HttpModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
