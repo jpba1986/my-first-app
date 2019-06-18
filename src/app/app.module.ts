@@ -7,9 +7,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { WarningAlertComponent } from './warningAlert/warningAlert.component';
 import { SuccessAlertComponent } from './successAlert/successAlert.component';
-import { ALERTComponent } from './alert/alert.component';
-import { FreddieComponent } from './freddie/freddie.component';
-import { PagesComponent } from './pages.component';
 import { ServerComponent } from './server/server.component';
 
 @NgModule({
@@ -17,9 +14,6 @@ import { ServerComponent } from './server/server.component';
     AppComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    ALERTComponent,
-    FreddieComponent,
-    PagesComponent,
     ServerComponent
   ],
   imports: [
