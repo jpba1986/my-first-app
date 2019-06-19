@@ -11,20 +11,27 @@ export class ServerComponent  {
   serverStatus: string  = 'offline';
   serverCreationStatus = 'No server was created!';
   serverName ='gg';
-
+  serverCreated = false;
 
  constructor(){
-   setTimeout(() => {
+   this.serverStatus = Math.random() > 0.5 ? 'online': 'offline';
+/*    setTimeout(() => {
      this.allowNewServer = true;
-   } , 2000);
+   } , 2000); */
  }
  getServerStatus (){
    return this.serverStatus;
  }
  onCreateServer(){
+   this.serverCreated = true;
    this.serverCreationStatus = 'Server was created';
  }
  onUpdateServerName(event: any){
   this.serverName = event.target.value;
  }
+
+ getColor(){
+   return this.serverStatus ==='online' ? 'green': 'red';
+ }
+
 }
