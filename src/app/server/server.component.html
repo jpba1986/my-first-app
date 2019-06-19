@@ -2,10 +2,12 @@
 {{'Server'}} with  id {{ serverId}}
  is {{ getServerStatus()}}
 </p>
-
+<!--
 <input type="text" class="form-control" 
 (input) ="onUpdateServerName($event)"
->
+>-->
+<input type="text" class="form-control" 
+[(ngModel)]="serverName">
 
 <button class="btn btn-primary" 
  [disabled] = "!allowNewServer" 
@@ -13,4 +15,5 @@
  >Add Server</button>
 
 <!-- <p [innerText]= "allowNewServer"></p>-->
-<p> {{ serverCreationStatus}}</p>
+<p> {{ serverName}}</p>
+

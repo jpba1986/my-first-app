@@ -10,7 +10,7 @@ export class ServerComponent  {
   serverId: number = 10;
   serverStatus: string  = 'offline';
   serverCreationStatus = 'No server was created!';
-  serverName ='';
+  serverName ='gg';
 
 
  constructor(){
