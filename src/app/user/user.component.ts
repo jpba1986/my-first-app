@@ -7,20 +7,20 @@ import { Component, OnInit } from '@angular/core';
 export class UserComponent implements OnInit {
 
   userNameString = '';
-  allowResetUser = false;
-  userEmpty='';
+  //allowResetUser = false; old form
+  //userEmpty='';old form
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  onResetUser(){    
+// old form
+/*   onResetUser(){    
     this.userEmpty = ('');
     this.userNameString='';
     this.allowResetUser= false;
-  }
-  onChangeUser(event: any){
+  } */
+/*   onChangeUser(event: any){
     if (event.target.value != ''){
       this.userNameString = (event.target.value);
       this.allowResetUser= true;
@@ -28,5 +28,5 @@ export class UserComponent implements OnInit {
     else{
       this.allowResetUser= false;
     }    
-  }
+  } */
 }
