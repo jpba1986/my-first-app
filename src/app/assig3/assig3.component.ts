@@ -23,7 +23,8 @@ export class Assig3Component implements OnInit {
     //let i = 1;
     this.showP = !this.showP;
     //this.logArray.push(i);    
-    this.logArray.push(this.logArray.length + 1 );   
+    //this.logArray.push(this.logArray.length + 1 );   
+    this.logArray.push(new Date());
   }
 
   /*getPColor(){
