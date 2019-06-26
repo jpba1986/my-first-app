@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-assig3',
   templateUrl: './assig3.component.html',
-  //styleUrls: ['./assig3.component.css']
+  styleUrls: ['./assig3.component.css'],
   styles:[`
     .displayColor{
       color: white;
@@ -20,9 +20,10 @@ export class Assig3Component implements OnInit {
   }
 
   onDisplayDet(){
-    let i = 1;
+    //let i = 1;
     this.showP = !this.showP;
-    this.logArray.push(i);    
+    //this.logArray.push(i);    
+    this.logArray.push(this.logArray.length + 1 );   
   }
 
   /*getPColor(){

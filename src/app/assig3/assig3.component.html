@@ -7,3 +7,10 @@
 <!--
 <p *ngIf="showP" [ngStyle]="{'background-color': getPColor()}">Secret password = tuna</p>-->
 <p *ngIf="showP" [ngClass]="{displayColor: logArray.length >=5 }">Secret password = tuna</p>
+
+<div *ngFor="let logItem of logArray"
+[ngStyle]="{backgroundColor: logItem >=5 ? 'blue' : 'transparent' }"
+[ngClass]="{'white-text': logItem >=5 }"
+>
+{{ logItem }}
+</div>
