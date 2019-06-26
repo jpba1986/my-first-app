@@ -1,4 +1,9 @@
-<<p>
+<p>
   Assinng 3 works!
 </p>
->
+<button class="btn btn-primary"
+(click)="onDisplayDet()"
+>Display Details</button>
+<!--
+<p *ngIf="showP" [ngStyle]="{'background-color': getPColor()}">Secret password = tuna</p>-->
+<p *ngIf="showP" [ngClass]="{displayColor: logArray.length >=5 }">Secret password = tuna</p>
